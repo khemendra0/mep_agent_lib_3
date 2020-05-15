@@ -15,7 +15,7 @@
  */
 
 // define the type information
-package models
+package model
 
 type AppInstanceInfo struct {
 	AppInstanceId                            string                                    `yaml:"appInstanceId" json:"appInstanceId"`
