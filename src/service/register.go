@@ -31,9 +31,9 @@ func SvcReg(confPath string) (string, error) {
 	}
 
 	appInstanceId := conf.AppInstanceId
-	serviceInfos := conf.ServiceInfoPosts
 	mepServerIP := conf.MepServerIP
 	mepServerPORT := conf.MepServerPORT
+	serviceInfos := conf.ServiceInfoPosts
 	url := "http://" + mepServerIP + ":" + mepServerPORT + "/mep/mec_service_mgmt/v1/applications/" + appInstanceId + "/services"
 
     for _, serviceInfo := range serviceInfos {

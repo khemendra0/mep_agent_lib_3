@@ -22,13 +22,13 @@ import (
 	"io/ioutil"
 	"net/http"
 	"strings"
-	"github.com/khemendra0/mep_agent_lib_2/src/model"
+	"github.com/khemendra0/mep_agent_lib_2/src/models"
 )
 
 // get yaml and parse to struct
-func GetConf(path string) (model.AppInstanceInfo, error) {
+func GetConf(path string) (models.AppInstanceInfo, error) {
 	yamlFile, err := ioutil.ReadFile(path)
-	var info model.AppInstanceInfo
+	var info models.AppInstanceInfo
 	if err != nil {
 		return info, err
 	}
